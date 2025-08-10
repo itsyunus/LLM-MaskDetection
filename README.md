@@ -1,66 +1,60 @@
-LLM-MaskDetection
+# LLM-MaskDetection
+
 LLM-MaskDetection is an implementation for detecting medical masks in images, leveraging deep learning techniques.
 
-Contents
-Medical mask/ : Folder containing code and related files for mask detection.
+## Contents
 
-.gitattributes : Git configuration file for handling repository attributes.
+- `Medical mask/` : Folder containing code and related files for mask detection.
+- `.gitattributes` : Git configuration file for handling repository attributes.
+- `README.md` : Project documentation.
+- `deploy.prototxt` : Configuration file defining the deep learning model architecture.
+- `index.ipynb` : Jupyter notebook for training, inference, and analysis.
+- `submission.csv` : Example/output predictions for mask detection.
+- `train.csv` : Labeled data for training the mask detection model.
+- `weights.caffemodel` : Pre-trained weights for inference.
 
-README.md : Project documentation (this file).
+## Features
 
-deploy.prototxt : Configuration file defining the deep learning model architecture.
+- Deep Learning based medical mask detection.
+- Pre-trained model available (`weights.caffemodel`).
+- Data files included for training (`train.csv`) and submission/output (`submission.csv`).
+- Configurable model architecture via `deploy.prototxt`.
+- Code and experiments accessible through a Jupyter Notebook (`index.ipynb`).
 
-index.ipynb : Jupyter notebook for training, inference, and analysis.
+## Getting Started
 
-submission.csv : Example/output predictions for masked detection.
+### 1. Clone the repository
 
-train.csv : Labeled data for training the mask detection model.
 
-weights.caffemodel : Pre-trained weights for inference.
+### 2. Install dependencies
 
-Features
-Deep Learning based medical mask detection.
+- Python 3.x
+- Jupyter notebook
+- Deep learning frameworks (e.g., Caffe)
 
-Pre-trained model available (weights.caffemodel).
+### 3. Run the Jupyter notebook
 
-Data files included for training (train.csv) and submission/output (submission.csv).
+- Open `index.ipynb` in Jupyter to explore code for training/inference.
 
-Configurable model architecture via deploy.prototxt.
+### 4. Model Inference
 
-Code and experiments accessible through a Jupyter Notebook (index.ipynb).
+- Use `deploy.prototxt` and `weights.caffemodel` for deploying the mask detection model.
 
-Getting Started
-Clone the repository:
+## Data
 
-text
-git clone https://github.com/itsyunus/LLM-MaskDetection.git
-Install dependencies:
+- `train.csv` contains labeled images and mask status for training.
+- `submission.csv` contains sample prediction/output data for submissions.
 
-Python 3.x
+## Usage
 
-Jupyter notebook
+- Train the model using provided scripts and data.
+- Run inference on medical mask images using the pre-trained weights.
+- Experiment and analyze results in the Jupyter notebook.
 
-Deep learning frameworks (e.g., Caffe)
+## License
 
-Run the Jupyter notebook:
-
-Open index.ipynb in Jupyter to explore code for training/inference.
-
-Model Inference:
-
-Use deploy.prototxt and weights.caffemodel for deploying the mask detection model.
-
-Data
-train.csv contains labeled images and mask status for training.
-
-submission.csv contains sample prediction/output data for submissions.
-
-Usage
-Train the model using provided scripts and data.
-
-Run inference on medical mask images using the pre-trained weights.
-
-Experiment and analyze results in the Jupyter notebook.
-
-License
 No license specified.
+
+---
+
+*For any issues or contributions, please open an issue or pull request via GitHub.*
